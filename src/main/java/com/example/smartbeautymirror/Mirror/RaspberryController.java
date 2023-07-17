@@ -31,7 +31,7 @@ public class RaspberryController {
         if (image != null && !image.isEmpty()) {
             try {
                 logger.info("2");;
-                String filePath = "/app/step2/image/";
+                String filePath = "home/ubuntu/app/step2/image/";
                 byte[] fileBytes = image.getBytes();
                 String fileName = image.getOriginalFilename();
                 Path path = Path.of(filePath + fileName);
